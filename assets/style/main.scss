@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro&family=Source+Serif+Pro:wght@200&display=swap");
+
+@font-face {
+  font-family: "GibsonBold";
+  src: url("../fonts/Gibson-Bold/Gibson-Bold.eot");
+  src: url("../fonts/Gibson-Bold/Gibson-Bold.woff") format("woff"),
+    url("../fonts/Gibson-Bold/Gibson-Bold.ttf") format("truetype"),
+    url("../fonts/Gibson-Bold/Gibson-Bold.svg") format("svg");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GibsonRegular";
+  src: url("../fonts/Gibson-Regular/Gibson-Regular.eot");
+  src: url("../fonts/Gibson-Regular/Gibson-Regular.woff") format("woff"),
+    url("../fonts/Gibson-Regular/Gibson-Regular.ttf") format("truetype"),
+    url("../fonts/Gibson-Regular/Gibson-Regular.svg") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GibsonLight";
+  src: url("../fonts/Gibson-Light/Gibson-Light.eot");
+  src: url("../fonts/Gibson-Light/Gibson-Light.woff") format("woff"),
+    url("../fonts/Gibson-Light/Gibson-Light.ttf") format("truetype"),
+    url("../fonts/Gibson-Light/Gibson-Light.svg") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
