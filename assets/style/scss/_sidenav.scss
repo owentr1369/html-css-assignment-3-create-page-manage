@@ -1,0 +1,94 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  width: 88px;
+  padding: 12px 8px 24px;
+  &_top {
+    .logo {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 26px;
+    }
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .navbar_item {
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        color: #9b9ba8;
+        padding: 10px 14px 11px;
+        margin-bottom: 10px;
+
+        &-icon {
+          display: block;
+          margin: auto;
+        }
+        &-text {
+          font-size: 12px;
+          line-height: 16px;
+        }
+        &.active {
+          background: #f6f6f8;
+          border-radius: 8px;
+          color: #3e6dda;
+          font-weight: 700;
+        }
+        &:hover {
+          background: #f6f6f8;
+          border-radius: 8px;
+          color: #3e6dda;
+          font-weight: 700;
+          svg {
+            path {
+              fill: #3e6dda;
+            }
+          }
+        }
+      }
+    }
+  }
+  &_bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-noti {
+      text-align: center;
+      cursor: pointer;
+      a {
+        width: 100%;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        color: #9b9ba8;
+        text-decoration: none;
+      }
+      padding-top: 10px;
+      padding-bottom: 11px;
+      &:hover {
+        background: #f6f6f8;
+        border-radius: 8px;
+        a {
+          color: #3e6dda;
+          font-weight: 700;
+        }
+        svg {
+          path {
+            fill: #3e6dda;
+          }
+        }
+      }
+      svg {
+        margin-bottom: 6px;
+      }
+    }
+    &-user {
+      margin-top: 28px;
+    }
+  }
+}
