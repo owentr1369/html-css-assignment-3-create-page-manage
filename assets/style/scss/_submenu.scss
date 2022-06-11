@@ -1,7 +1,41 @@
 .submenu {
   background: #f6f6f8;
-  padding-left: 16px;
-  padding-top: 16px;
-  padding-right: 16px;
   min-height: 100vh;
+  min-width: 230px;
+  &_header {
+    height: 52px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #828292;
+    padding: 16px;
+    border-bottom: 1px solid #e9e9ec;
+  }
+  &_content {
+    padding-top: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    flex-direction: column;
+    &-item {
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 16px;
+      text-align: none;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      text-decoration: none;
+      color: #3f3f49;
+      border-radius: 4px;
+      margin-bottom: 8px;
+      &:hover,
+      &.active {
+        font-weight: 700;
+        background: #e9e9ec;
+        color: #3e6dda;
+      }
+    }
+  }
 }
