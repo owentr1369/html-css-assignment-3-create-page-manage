@@ -3,7 +3,7 @@
   padding-top: 24px;
   padding-left: 40px;
   padding-right: 40px;
-  display: none;
+  // display: none;
   &_header {
     display: flex;
     justify-content: space-between;
@@ -25,6 +25,7 @@
       font-size: 14px;
       line-height: 20px;
       margin-bottom: 48px;
+      cursor: pointer;
       &:nth-child(2) {
         background: #3e6dda;
         color: #ffffff;
@@ -128,6 +129,40 @@
       input[type="radio"] {
         margin-bottom: 20px;
         margin-right: 8px;
+        position: relative;
+        cursor: pointer;
+        &:checked::after {
+          border: 2px solid #3e6dda;
+        }
+        &:checked::before {
+          display: block;
+        }
+        &::after {
+          position: absolute;
+          content: "";
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          border: 2px solid #828292;
+          background-color: #fff;
+          z-index: 2;
+          top: 50%;
+          left: 50%;
+          transform: translate((-50%), (-50%));
+        }
+        &::before {
+          position: absolute;
+          content: "";
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background-color: #3e6dda;
+          top: 50%;
+          left: 50%;
+          transform: translate((-50%), (-50%));
+          z-index: 3;
+          display: none;
+        }
       }
       label {
         font-family: "Roboto";
@@ -136,6 +171,7 @@
         font-size: 14px;
         line-height: 20px;
         color: #09142f;
+        cursor: pointer;
       }
     }
     &-available {
@@ -145,6 +181,41 @@
       input[type="radio"] {
         margin-bottom: 20px;
         margin-right: 8px;
+        width: 16px;
+        position: relative;
+        cursor: pointer;
+        &:checked::after {
+          border: 2px solid #3e6dda;
+        }
+        &:checked::before {
+          display: block;
+        }
+        &::after {
+          position: absolute;
+          content: "";
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          border: 2px solid #828292;
+          background-color: #fff;
+          z-index: 2;
+          top: 50%;
+          left: 50%;
+          transform: translate((-50%), (-50%));
+        }
+        &::before {
+          position: absolute;
+          content: "";
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background-color: #3e6dda;
+          top: 50%;
+          left: 50%;
+          transform: translate((-50%), (-50%));
+          z-index: 3;
+          display: none;
+        }
       }
       label {
         font-family: "Roboto";
@@ -153,6 +224,7 @@
         font-size: 14px;
         line-height: 20px;
         color: #09142f;
+        cursor: pointer;
       }
     }
   }
