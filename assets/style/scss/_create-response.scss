@@ -1,0 +1,125 @@
+.create {
+  width: calc(100vw - (88px + 230px));
+  padding-top: 24px;
+  padding-left: 40px;
+  padding-right: 40px;
+  //   display: none;
+  &_header {
+    display: flex;
+    justify-content: space-between;
+    &-title {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+      font-family: "GibsonRegular";
+    }
+    button {
+      border-radius: 4px;
+      border: none;
+      padding: 8px 16px;
+      color: #141417;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 48px;
+      &:nth-child(2) {
+        background: #3e6dda;
+        color: #ffffff;
+        margin-left: 8px;
+      }
+    }
+  }
+  &_form {
+    padding-left: 261px;
+    padding-right: 261px;
+    div {
+      margin-bottom: 12px;
+    }
+    h3 {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 4;
+    }
+    &-category {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      select {
+        height: 36px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 12px;
+        border: 1px solid #b4b4be;
+        border-radius: 4px;
+        option {
+          color: #141417;
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          min-height: 36px;
+        }
+      }
+    }
+    &-shortcut {
+      input {
+        width: 100%;
+        border: 1px solid #b4b4be;
+        border-radius: 4px;
+        height: 36px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 12px;
+        color: #6b6b7b;
+      }
+    }
+    &-textarea {
+      display: flex;
+      flex-direction: column;
+      textarea {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 12px;
+        border: 1px solid #b4b4be;
+        border-radius: 4px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+    &-tag {
+      h3 {
+        margin-bottom: 4px;
+      }
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 6px 12px 6px 13px;
+        background: #e9e9ec;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        svg {
+          margin-right: 4px;
+        }
+        span {
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}

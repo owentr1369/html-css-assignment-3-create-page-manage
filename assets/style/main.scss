@@ -3,6 +3,7 @@
 @import "../style/scss/sidenav";
 @import "../style/scss/submenu";
 @import "../style/scss/content";
+@import "../style/scss/create-response";
 
 @font-face {
   font-family: "GibsonBold";
@@ -41,4 +42,12 @@ body {
   display: flex;
   min-height: 100vh;
   font-family: "Roboto", sans-serif;
+}
+
+.open {
+  display: block;
+}
+
+.hide {
+  display: none;
 }
