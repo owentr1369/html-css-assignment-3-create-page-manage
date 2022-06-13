@@ -1,60 +1,60 @@
 .submenu {
-  background: #f6f6f8;
   min-height: 100vh;
   min-width: 230px;
+  background: #f6f6f8;
   &_header {
     position: relative;
-    height: 52px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 20px;
-    color: #828292;
-    padding: 16px;
-    border-bottom: 1px solid #e9e9ec;
     display: flex;
     justify-content: space-between;
+    height: 52px;
+    padding: 16px;
+    border-bottom: 1px solid #e9e9ec;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #828292;
     &-button {
       position: absolute;
+      right: -11px;
+      top: 50%;
+      transform: translateY(-50%);
       width: 24px;
       height: 24px;
       box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1),
         0px 2px 10px rgba(0, 0, 0, 0.1);
+      border: none;
+      border-radius: 50%;
       text-align: center;
       line-height: 24px;
-      border-radius: 50%;
-      right: -11px;
-      top: 50%;
-      transform: translateY(-50%);
       outline: none;
-      border: none;
       cursor: pointer;
       z-index: 5;
     }
   }
   &_content {
+    display: flex;
+    flex-direction: column;
     padding-top: 32px;
     padding-left: 16px;
     padding-right: 16px;
-    display: flex;
-    flex-direction: column;
     &-item {
       width: 100%;
+      margin-bottom: 8px;
       padding-top: 10px;
       padding-bottom: 10px;
       padding-left: 16px;
+      border-radius: 4px;
       text-align: none;
+      text-decoration: none;
       font-weight: 400;
       font-size: 14px;
       line-height: 20px;
-      text-decoration: none;
       color: #3f3f49;
-      border-radius: 4px;
-      margin-bottom: 8px;
       &:hover,
       &.active {
         font-weight: 700;
         background: #e9e9ec;
-        color: #3e6dda;
+        color: var($main-color);
       }
     }
   }
