@@ -21,7 +21,7 @@
         margin-bottom: 10px;
         padding: 10px 14px 11px;
         text-decoration: none;
-        color: var($sidebar-text);
+        color: $sidebar-text;
         text-align: center;
         &-icon {
           display: block;
@@ -34,17 +34,17 @@
         &.active {
           background: #f6f6f8;
           border-radius: 8px;
-          color: var($main-color);
+          color: $main-color;
           font-weight: 700;
         }
         &:hover {
           border-radius: 8px;
           font-weight: 700;
           background: #f6f6f8;
-          color: var($main-color);
+          color: $main-color;
           svg {
             path {
-              fill: var($main-color);
+              fill: $main-color;
             }
           }
         }
@@ -65,7 +65,7 @@
         line-height: 16px;
         text-align: center;
         text-decoration: none;
-        color: var($sidebar-text);
+        color: $sidebar-text;
       }
       padding-top: 10px;
       padding-bottom: 11px;
@@ -73,12 +73,12 @@
         border-radius: 8px;
         background: #f6f6f8;
         a {
-          color: var($main-color);
+          color: $main-color;
           font-weight: 700;
         }
         svg {
           path {
-            fill: var($main-color);
+            fill: $main-color;
           }
         }
       }
