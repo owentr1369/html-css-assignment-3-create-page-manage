@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
+  min-height: 100vh;
   width: 88px;
   padding: 12px 8px 24px;
   &_top {
@@ -18,12 +18,11 @@
       align-items: center;
       .navbar_item {
         width: 100%;
-        text-align: center;
-        text-decoration: none;
-        color: #9b9ba8;
-        padding: 10px 14px 11px;
         margin-bottom: 10px;
-
+        padding: 10px 14px 11px;
+        text-decoration: none;
+        color: var($sidebar-text);
+        text-align: center;
         &-icon {
           display: block;
           margin: auto;
@@ -35,17 +34,17 @@
         &.active {
           background: #f6f6f8;
           border-radius: 8px;
-          color: #3e6dda;
+          color: var($main-color);
           font-weight: 700;
         }
         &:hover {
-          background: #f6f6f8;
           border-radius: 8px;
-          color: #3e6dda;
           font-weight: 700;
+          background: #f6f6f8;
+          color: var($main-color);
           svg {
             path {
-              fill: #3e6dda;
+              fill: var($main-color);
             }
           }
         }
@@ -53,10 +52,10 @@
     }
   }
   &_bottom {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     &-noti {
       text-align: center;
       cursor: pointer;
@@ -65,21 +64,21 @@
         font-size: 12px;
         line-height: 16px;
         text-align: center;
-        color: #9b9ba8;
         text-decoration: none;
+        color: var($sidebar-text);
       }
       padding-top: 10px;
       padding-bottom: 11px;
       &:hover {
-        background: #f6f6f8;
         border-radius: 8px;
+        background: #f6f6f8;
         a {
-          color: #3e6dda;
+          color: var($main-color);
           font-weight: 700;
         }
         svg {
           path {
-            fill: #3e6dda;
+            fill: var($main-color);
           }
         }
       }
